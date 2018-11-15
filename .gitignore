@@ -36,8 +36,9 @@ obj/
 [Rr]elease*/
 _ReSharper*/
 
-/.vs/SimpleNN/v15/.suo
-/.vs/SimpleNN/v15/Browse.VC.db
-/.vs/SimpleNN/v15/Browse.VC.opendb
-/.vs/SimpleNN/v15/ipch/AutoPCH/46de6e728ce4f784/NN.ipch
-/.vs/SimpleNN/v15/ipch/AutoPCH/4d517d642b0830f9/SIMPLENN.ipch
+/.vs/advancedNN/v15/ipch/AutoPCH/2478a6990a1b08f7/MAIN.ipch
+/.vs/advancedNN/v15/ipch/AutoPCH/2ba104f9e20460e4/NN.ipch
+/.vs/advancedNN/v15/ipch/AutoPCH/907cd32fc3cb6bb7/NN.ipch
+/.vs/advancedNN/v15/ipch/AutoPCH/ed6acaa8ee5f64/MAIN.ipch
+/.vs/advancedNN/v15/Browse.VC.db
+/.vs/advancedNN/v15/Browse.VC.opendb

@@ -7,52 +7,52 @@
 
 #include "NN.h"
 
-const int NTEAMS = NINPUTS;
+#define NTEAMS NINPUTS
 
-const int RUSSLAND = 0;
-const int SAUDI_ARABIEN = 1;
-const int AGYPTEN = 2;
-const int URUGUAY = 3;
+#define RUSSLAND 0
+#define SAUDI_ARABIEN 1
+#define AGYPTEN 2
+#define URUGUAY 3
 
-const int PORTUGAL = 4;
-const int SPANIEN = 5;
-const int MAROKKO = 6;
-const int IRAN = 7;
+#define PORTUGAL 4
+#define SPANIEN 5
+#define MAROKKO 6
+#define IRAN 7
 
-const int FRANKREICH = 8;
-const int AUSTRALIEN = 9;
-const int PERU = 10;
-const int DANEMARK = 11;
+#define FRANKREICH 8
+#define AUSTRALIEN 9
+#define PERU 10
+#define DANEMARK 11
 
-const int ARGENTINIEN = 12;
-const int ISLAND = 13;
-const int KROATION = 14;
-const int NIGERIA = 15;
+#define ARGENTINIEN 12
+#define ISLAND 13
+#define KROATION 14
+#define NIGERIA 15
 
-const int BRASILIEN = 16;
-const int SCHWEIZ = 17;
-const int COSTA_RICA = 18;
-const int SERBIEN = 19;
+#define BRASILIEN 16
+#define SCHWEIZ 17
+#define COSTA_RICA 18
+#define SERBIEN 19
 
-const int DEUTSCHLAND = 20;
-const int MEXIKO = 21;
-const int SCHWEDEN = 22;
-const int SUDKOREA = 23;
+#define DEUTSCHLAND 20
+#define MEXIKO 21
+#define SCHWEDEN 22
+#define SUDKOREA 23
 
-const int BELGIEN = 24;
-const int PANAMA = 25;
-const int TUNESIEN = 26;
-const int ENGLAND = 27;
+#define BELGIEN 24
+#define PANAMA 25
+#define TUNESIEN 26
+#define ENGLAND 27
 
-const int POLEN = 28;
-const int SENEGAL = 29;
-const int KOLUMBIEN = 30;
-const int JAPAN = 31;
+#define POLEN 28
+#define SENEGAL 29
+#define KOLUMBIEN 30
+#define JAPAN 31
 
 int main(int argc, char *argv[]) {
     
     // random numbers
-    srand(time(NULL));
+    srand((unsigned int)time(NULL));
     
     // initialize NN
     union NN nn;

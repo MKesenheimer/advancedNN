@@ -1,4 +1,5 @@
 #include "NN.h"
+#pragma warning(disable:4996)
 
 double rnd(const double a, const double b) {
     double x = (double)rand()/(double)(RAND_MAX)*(b-a)+a;
@@ -19,14 +20,6 @@ double norm(const double p[]) {
         norm += pow(p[i],2);
     }
     return pow(norm,0.5);
-}
-
-double max(const double p[]) {
-    double max = 0;
-    for(int i=0; i<NPARAMETERS; i++) {
-        if(p[i]>max) max = p[i];
-    }
-    return max;
 }
 
 double transferFunction(const double x, const double theta) {
@@ -148,7 +141,7 @@ void train1(union NN *nn, const struct DataSet dataset[], const double accuracy,
     
     // optimize the cost function
     while(nn->strct.lf > accuracy) {
-        double grad[NPARAMETERS], p[NPARAMETERS], temp;
+        double grad[NPARAMETERS], p[NPARAMETERS];
         
         // calculate the gradatives
         #ifdef PARALLEL
@@ -215,8 +208,7 @@ void train2(union NN *nn, const struct DataSet dataset[], const double accuracy,
     // optimize the cost function
     while(nn->strct.lf > accuracy) {
     //do {
-        double temp;
-        
+
         // compute the search direction
         for (int i=0; i<NPARAMETERS; i++) {
             p[i] = 0.0;
