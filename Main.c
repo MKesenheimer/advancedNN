@@ -122,8 +122,8 @@ int main(int argc, char *argv[]) {
     // load previous parameters
     //load(&nn);
     // train the network
-    //train1(&nn, dataset, 0.1, 1);
-    train2(&nn, dataset, 0.1, 1);
+    train1(&nn, dataset, 0.1, 1);
+    //train2(&nn, dataset, 0.1, 1);
 
     // initialize test sample
     double xx[NTEAMS];
@@ -140,6 +140,11 @@ int main(int argc, char *argv[]) {
     
     // save snapshot
     snapshot(&nn);
+
+#ifdef WINDOWS
+	printf("Press Any Key to Continue\n");
+	getchar();
+#endif // WINDOWS
 
 	return 0;
 }

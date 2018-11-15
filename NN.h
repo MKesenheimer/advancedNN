@@ -13,7 +13,7 @@
 #define NINPUTS 32
 #define NOUTPUTS 2
 #define NNEURONS 5
-#define NDATASETS 4
+#define NDATASETS 3
 #define NPARAMETERS (2*NINPUTS + NINPUTS * NNEURONS + NNEURONS + NNEURONS * NOUTPUTS + NOUTPUTS)
 
 // choose parallelization
@@ -26,7 +26,7 @@
 //#define TANH
 
 // whether to use linesearch for optimization or not
-#define LINESEARCH
+//#define LINESEARCH
 
 struct NNstruct {
     double iweight[NINPUTS];

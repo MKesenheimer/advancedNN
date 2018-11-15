@@ -305,7 +305,7 @@ void train2(union NN *nn, const struct DataSet dataset[], const double accuracy,
 }
 
 void snapshot(union NN *nn) {
-    FILE *f1 = fopen("nn.dat", "w");
+    FILE *f1 = fopen("nn.dat", "w+");
     if(f1 == NULL){
         printf("Error opening file!\n");
         exit(1);
